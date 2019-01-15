@@ -13,108 +13,174 @@
       <div id="container">
         <div id="content" role="main">
           <!-- TODO: Content goes here -->
-          HTML Elements
+          <img src="logo.png" alt="logo">
+          <h1> HTML Elements </h1>
 
-Home
-Headers
-Table
-List
-Text formats
-Blockquotes
+          <nav id="home">
+            <hr>
+            <a href="#home"><b> Home</b> </a>
+            <a href="#headers"><b>Headers</b></a>
+            <a href="#table"><b> Table</b> </a>
+            <a href="#lists"><b>List</b> </a>
+            <a href="#formats"><b> Text formats</b> </a>
+            <a href="#blockq"><b>Blockquotes </b></a>
+            <hr>
+          </nav>
 
-Pay attention to h1 tag inside section element. Font-size for h1 is the same as font-size for h2, because we have to use only one h1 on the page, and it is commonly used inside header
+          <p id="headers">Pay attention to h1 tag inside section element. Font-size for h1 is the same as font-size for h2, because
+            we
+            have to use only one h1 on the page, and it is commonly used inside header</p>
 
-Header 2
-Header 3
-Header 4
-Header 5
-Header 6
+          <h2> Header 2 </h2>
+          <h3> Header 3 </h3>
+          <h4> Header 4 </h4>
+          <h4> Header 5 </h4>
+          <h6> Header 6 </h6>
 
-Lorem ipsum dolor sit amet, test link adipiscing elit. This is strong. Nullam dignissim convallis est. Quisque aliquam. This is emphasized. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation).Underline. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+          <p>Lorem ipsum dolor sit amet, <a href="https://github.com/RomanVavrun">test link</a> adipiscing elit.
+            <strong>This is strong</strong>. Nullam dignissim convallis est.
+            Quisque aliquam. <i>This is emphasized</i>. Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125.
+            Water is H<sub>2</sub>O. Nam
+            sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <i>The New York
+              Times</i>
+            (That’s a citation).<u>Underline</u>. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla
+            nonummy. Mauris
+            a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis
+            tellus. </p>
 
-HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type COPY filename. Dinner`s at 5:00. Let’s make that 7. This text has been struck.
+          <p><abbr>HTML</abbr> and <abbr>CSS</abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at,
+            commodo vitae, feugiat in,
+            nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat
+            justo, eu volutpat enim diam eget metus. To copy a file type <tt>COPY</tt> <i>filename</i>. <del>Dinner`s
+              at 5:00.</del> <mark>Let’s make that
+              7.</mark> This <strike>text</strike> has been struck.</p>
+          <hr>
 
-Table
+          <h2 id="table"> Table</h2>
+          <table>
+            <thead>
+              <tr>
+                <td> Header </td>
+                <td> Header </td>
+                <td> Header </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> Lviv</td>
+                <td> Kyiv</td>
+                <td> Kharkiv</td>
+              </tr>
+              <tr>
+                <td> Odessa</td>
+                <td> Zhytomyr</td>
+                <td> Dnipropetrovsk</td>
+              </tr>
+              <tr>
+                <td> Sumy</td>
+                <td> Chernivtsi</td>
+                <td> Lutsk</td>
+              </tr>
+            </tbody>
+          </table>
 
-Header
-Header
-Header
+          <h2 id="lists"> Unordered List </h2>
+          <ul>
+            <li> List item 1</li>
+            <li>List item 2</li>
+            <ul>
+              <li>Some nested list item 1</li>
+            </ul>
+            <li>List item 3</li>
+          </ul>
 
-Lviv
-Kyiv
-Kharkiv
+          <h2> Ordered List </h2>
+          <ol>
+            <li> List item 1 </li>
+            <li>List item 2</li>
+            <ol>
+              <li> Some nested list item 1</li>
+            </ol>
+            <li>List item 3</li>
+          </ol>
 
-Odessa
-Zhytomyr
-Dnipropetrovsk
+          <h3> Definition List </h3>
+          <dl>
+            <dt> defines terms 1 </dt>
+            <dd> description 1</dd>
+            <dt> defines terms 2 </dt>
+            <dd> description 2</dd>
+          </dl>
+          Details
+          <select>
+            <option value="HTML"> HTML </option>
+            <option value="CSS"> CSS </option>
+            <option value="JS"> JS </option>
+          </select>
+          <hr>
+          <h2 id="formats"> Text formats </h2>
+          <article>
+            <p><b>Article Text</b> </p>
+            <h2> Article title </h2>
+            <p> Article description</p>
+          </article>
 
-Sumy
-Chernivtsi
-Lutsk
-
-Unordered List
-
-List item 1
-List item 2
-	Some nested list item 1
-List item 3
-
-Ordered List
-
-1. List item 1
-2. List item 2
-	A. Some nested list item 1
-3. List item 3
-
-Definition List
-defines terms 1
-description 1
-defines terms 2
-description 
-
-Details
-
-HTML
-CSS
-JS
-
-Text formats
-
-Article Text
-Article title
-Article description
-
-Preformatted Text
-
-Text
-  in a pre element
+          <h3>Preformatted Text</h3>
+          <pre>
+<b>Text</b>
+  in a <b>pre</b> element
     is displayed in a fixed-width
 font, and it preserves
 both           spaces and
     line breaks
+          </pre>
 
-Code
+         <h2> Code </h2>
 
+            <code>
+              <pre>
 .wrapper {
-display: flex;
+  display: flex;
   vertical-align: middle;
   justify-content: center;
  }
+    </pre>
+            </code>
 
-Blockquotes
+         <h2 id="blockq"> Blockquotes </h2>
 
-Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.
-"If you go back a few hundred years, what we take for granted today would seem like magic-being able to talk to people over long distances, to transmit images, flying, accessing vast amounts of data like an oracle. These are all things that would have been considered magic a few hundred years ago."            
-Elon Musk
-
-First name:
-Surname:
-Email:
-
-Submit
-
-© Copyright Epam Systems
-
+         <p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation. </p>
+         <cite>
+          "If you go back a few hundred years, what we take for granted today would seem like magic-being able to talk
+          to people over long distances, to transmit images, flying, accessing vast amounts of data like an oracle.
+          These are all things that would have been considered magic a few hundred years ago." <br>
+         <a href="https://en.wikipedia.org/wiki/Elon_Musk"> Elon Musk</a>
+        </cite>
+        <hr>
+    
+        <form action="" method="post">
+          <label for="name">
+         First name:
+        </label>
+         <input type="text" id="name"> 
+         <br>
+         <label for="surname">
+          Surname:
+        </label>
+        <input type="text" id="surname">
+        <br>
+        <label for="email">
+          Email:
+        </label>
+        <input type="email" name="gmail" id="email">
+        <br>
+        <textarea name="des" id="textarea" cols="30" rows="10"></textarea>
+        <br>
+        <button type="submit">  Submit</button>
+      </form>
+          <footer>
+          © Copyright Epam Systems
+        </footer>
         </div>
       </div>
     </div>
