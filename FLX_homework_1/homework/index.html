@@ -37,6 +37,8 @@
           <h4> Header 5 </h4>
           <h6> Header 6 </h6>
 
+          <hr>
+
           <p>Lorem ipsum dolor sit amet, <a href="https://github.com/RomanVavrun">test link</a> adipiscing elit.
             <strong>This is strong</strong>. Nullam dignissim convallis est.
             Quisque aliquam. <i>This is emphasized</i>. Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125.
@@ -51,9 +53,9 @@
           <p><abbr>HTML</abbr> and <abbr>CSS</abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at,
             commodo vitae, feugiat in,
             nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat
-            justo, eu volutpat enim diam eget metus. To copy a file type <tt>COPY</tt> <i>filename</i>. <del>Dinner`s
+            justo, eu volutpat enim diam eget metus. To copy a file type COPY <i>filename</i>. <del>Dinner`s
               at 5:00.</del> <mark>Let’s make that
-              7.</mark> This <strike>text</strike> has been struck.</p>
+              7.</mark> This <del>text</del> has been struck.</p>
           <hr>
 
           <h2 id="table"> Table</h2>
@@ -87,20 +89,22 @@
           <h2 id="lists"> Unordered List </h2>
           <ul>
             <li> List item 1</li>
-            <li>List item 2</li>
+            <li>List item 2
             <ul>
               <li>Some nested list item 1</li>
             </ul>
+          </li>
             <li>List item 3</li>
           </ul>
 
           <h2> Ordered List </h2>
           <ol>
             <li> List item 1 </li>
-            <li>List item 2</li>
+            <li>List item 2
             <ol>
               <li> Some nested list item 1</li>
             </ol>
+          </li>
             <li>List item 3</li>
           </ol>
 
@@ -137,15 +141,17 @@ both           spaces and
 
          <h2> Code </h2>
 
-            <code>
+            
               <pre>
+                  <code>
 .wrapper {
   display: flex;
   vertical-align: middle;
   justify-content: center;
  }
+</code>
     </pre>
-            </code>
+           
 
          <h2 id="blockq"> Blockquotes </h2>
 
@@ -158,7 +164,7 @@ both           spaces and
         </cite>
         <hr>
     
-        <form action="" method="post">
+        <form action="https://www.google.com.ua/" method="post">
           <label for="name">
          First name:
         </label>
