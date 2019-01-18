@@ -88,6 +88,9 @@
     .box:nth-child(even) {
         background-color: #e2e2e2;
     }
+    .box-work {
+        padding: 10px;
+    }
     /* task 11 */
     .submit-btn {
         position: absolute;
