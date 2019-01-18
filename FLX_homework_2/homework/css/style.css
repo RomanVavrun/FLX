@@ -1,0 +1,118 @@
+@media screen {
+    /* task 2 */
+    .box h2:hover {
+        background-color: #87cefa;
+        color: white;
+    }
+    /* task3 */
+    p:not(.text-xs-center):not(.tm-banner-text)::first-letter {
+        color: #87CEFA;
+        font-size: 30px;
+    }
+    /* task 4 */
+    .tm-sidebar,
+    .tm-banner,
+    .tm-content-box {
+        box-shadow: 0px 0px 10px 5px #808080;
+    }
+    #home .tm-banner {
+        background-color: #E8E8E8;
+    }
+    .tm-banner-inner {
+        background-color: #fff;
+    }
+    .blocks div:nth-child(2) {
+        box-shadow: none;
+    }
+    /* task 5 */
+    .tm-content-box {
+        position: relative;
+    }
+    .tm-content-box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-top: 26px solid #2aabd2;
+        border-right: 130px solid transparent;
+        z-index: 1;
+    }
+    /* task 6 */
+    .tm-section-title {
+        color: #dcdcdc;
+        letter-spacing: 5px;
+    }
+    /* task 7 */
+    h2+p {
+        font-style: italic;
+    }
+    /* task 8 */
+    p:not(.tm-banner-text) {
+        line-height: 2em;
+        text-indent: 1em;
+    }
+    /* task 8 fix */
+    .flex-2-col {
+        display: flex;
+    }
+    .tm-team-description-container .tm-section-title {
+        margin-top: 220px;
+    }
+    .blocks .tm-team-description-container .tm-section-title {
+        margin-top: 0;
+    }
+    /* task 9 */
+    .padding-medium ol li a {
+        color: #000;
+    }
+    .padding-medium ol li a:visited {
+        text-decoration-line: underline;
+    }
+    .padding-medium ol li a:hover {
+        text-decoration-line: underline;
+        text-decoration-style: double;
+        color: #6bdcff;
+    }
+    .text {
+        position: relative;
+    }
+    .text::before {
+        content: "New";
+        position: absolute;
+        top: -5px;
+        right: -25px;
+        color: #FF0000;
+        font-size: 12px;
+    }
+    /* task 10 */
+    .box:nth-child(even) {
+        background-color: #e2e2e2;
+    }
+    /* task 11 */
+    .submit-btn {
+        position: absolute;
+        right: 40px;
+        bottom: 5px;
+        background-color: #fff;
+        border-color: #6bdcff;
+        color: #6bdcff;
+        height: 45px;
+        width: 150px;
+    }
+    .submit-btn:hover {
+        background-color: #9fd8fb;
+        color: #fff;
+    }
+    .contact-form input {
+        color: red;
+    }
+    .mandatory-field::after {
+        content: "*";
+        color: red;
+        font-weight: bold;
+    }
+    /* task 12 */
+    .tm-nav-item:hover {
+        background-color: #e2e2e2;
+    }
+}
