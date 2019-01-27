@@ -30,7 +30,7 @@ main {
 
 header {
   height: 100vh;
-  background-image: url(/FLX_homework_3/homework/img/header_background_v2.jpg);
+  background-image: url(img/header_background_v2.jpg);
   background-size: cover;
   text-transform: uppercase;
 }
