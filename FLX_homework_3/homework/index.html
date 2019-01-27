@@ -193,7 +193,21 @@
           <h1>CONTACT US</h1>
           <h4>For any questions you may have, you can write us:</h4>
 
-          <!-- TODO: write form fields -->
+          <form>
+            <div class="UserData">
+              <label for="UserName">Full name *</label>
+              <input type="text" name="UserFullName" id="UserName">
+
+              <label for="UserEmail">Email address *</label>
+              <input type="email" name="UserEmailaddress" id="UserEmail">
+            </div>
+            <div class="UserQuestionTextArea">
+            <label for="UserQuestion">Write your question bellow</label>
+              <textarea  id="UserQuestion" cols="131" rows="10">                
+              </textarea>
+            </div>
+            <button type="submit">SEND</button>
+          </form>
 
         </section>
       </main>

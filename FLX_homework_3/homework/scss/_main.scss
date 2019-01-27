@@ -1,1 +1,231 @@
-// Write your styles here
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background: $contentBackground;
+    font: $Font;
+}
+
+main {
+    margin: 0 auto;
+    width: $MainWidth;
+}
+
+#contact h1,
+#about h1,
+#list h1 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    color: $H1Color;
+
+}
+
+#contact p,
+#contact h4,
+#about p,
+#list p {
+    color: $H1Color;
+}
+
+header {
+    height: 100vh;
+    background-image: $HeaderBG;
+    background-size: $HeaderBGSize;
+    text-transform: uppercase;
+    section {
+        text-align: center;
+        a {
+            display: inline-block;
+            box-sizing: border-box;
+            width: 205px;
+            height: 50px;
+            background-color: $HeaderBtnBgColor;
+            padding-top: 14px;
+            text-decoration: none;
+            color: $HeaderBtnTextColor;
+            &:hover {
+                background-color: lighten( $HeaderBtnBgColor, 10%);
+                color: lighten( $HeaderBtnTextColor, 10%);
+            }
+            &:active {
+                background-color: darken( $HeaderBtnBgColor, 10%);
+                color: darken( $HeaderBtnTextColor, 10%);
+            }
+        }
+    }
+    h1 {
+        color: $HeaderMainTextColor;
+        margin-top: 25vh;
+    }
+}
+
+.logo img {
+    width: $LogoSize;
+    cursor: pointer;
+}
+
+.top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    nav {
+        a {
+            display: inline-block;
+            box-sizing: border-box;
+            height: 60px;
+            width: 290px;
+            padding-top: 25px;
+            text-align: center;
+            text-decoration: none;
+            color: $NavLinkColor;
+            font-weight: bold;
+            &:nth-child(2) {
+                border-right: 2px solid $NavLinkBorderColor;
+                border-left: 2px solid $NavLinkBorderColor;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+            &:active {
+                color: darken( $NavLinkColor, 30%);
+            }
+        }
+    }
+}
+
+#list article {
+    position: relative;
+    background-color: $PostBG;
+    margin-bottom: 20px;
+    display: inline-flex;
+    padding: 10px;
+    img {
+        margin-right: 10px;
+    }
+    button {
+        position: absolute;
+        right: 10px;
+        height: 40px;
+        width: 200px;
+        background-color: $PostBtnBGColor;
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover {
+            background-color: lighten( $PostBtnBGColor, 10%);
+            ;
+        }
+        &:active {
+            background-color: darken( $PostBtnBGColor, 10%);
+            ;
+        }
+    }
+}
+
+.post-description {
+    border-bottom: 1px solid #607d8b;
+    padding-bottom: 5px;
+    color: $PostDescrColor;
+    font-size: 12px;
+}
+
+.post h3 {
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+    color: $PostHeaderColor;
+}
+
+.post p {
+    margin-top: 0; 
+    color: $PostTextColor;
+}
+
+.toolbar {
+    text-align: right;
+    input {
+        height: 30px;
+        width: 200px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        padding-left: 15px;
+        background-color: $SearchBGColor;
+        border: 1px solid $SearchBorderColor;
+    }
+}
+
+#about img {
+    width: 100%;
+}
+
+#about h1 {
+    margin-top: 50px;
+}
+
+#contact {
+    text-align: right;
+    h1 {
+        margin-top: 60px;
+    }
+    h4 {
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
+
+.UserData {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+label {
+    position: absolute;
+    color: $LabelColor;
+    left: 89%;
+    top: 27px;
+    border-color: $LabelBorderColor;
+    &:first-child {
+        left: 41.5%;
+        top: 27px;
+    }
+}
+
+input {
+    height: 35px;
+    width: 49%;
+    margin-top: 50px;
+    background-color: $InputBGColor;
+    border: 1px solid $InputBorderColor;
+}
+
+.UserQuestionTextArea {
+    position: relative;
+    margin-top: 45px;
+    width: 100%;
+    label {
+        left: 81.5%;
+        top: -25px;
+    }
+}
+
+form button {
+    height: 40px;
+    width: 200px;
+    border: none;
+    background-color: $SumbitBtnColor;
+    color: #fff;
+    margin: 15px 0;
+    cursor: pointer;
+    &:hover {
+        background-color: lighten( $SumbitBtnColor, 10%);
+    }
+    &:active {
+        background-color: darken( $SumbitBtnColor, 10%);
+    }
+}
+
+footer span {
+    margin-left: 1.5vw;
+}
