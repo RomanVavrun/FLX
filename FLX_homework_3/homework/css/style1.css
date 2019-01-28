@@ -30,7 +30,7 @@ main {
 
 header {
   height: 100vh;
-  background-image: url(../img/header_background_v1.jpg);
+  background-image: url(img/header_background_v1.jpg);
   background-size: cover;
   text-transform: uppercase;
 }
