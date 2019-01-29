@@ -1,0 +1,152 @@
+/* Global styles */
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.main-Wrapper {
+    min-width: 900px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* header styles */
+
+header {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    background-image: url(/FLX_homework_4/homework/img/sample2.jpg);
+    background-size: cover;
+    color: #fff;
+    max-height: 1490px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.right-side,
+.center,
+.left-side {
+    height: 100vh;
+}
+
+.center,
+.left-side,
+.right-side {
+    display: flex;
+}
+
+/* right side styles */
+
+.logo-btn,
+.btn-header {
+    position: relative;
+    width: 50%;
+    margin-top: 100%;
+}
+
+.logo-btn a,
+.btn-header a {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    bottom: 40%;
+    text-align: center;
+    padding-top: 10px;
+    border: 2px solid #fff;
+}
+
+.btn-signup,
+.btn-login {
+    width: 25%;
+    padding: 10% 0;
+}
+
+/* del */
+
+/* .btn-signup a,
+.btn-login a {
+} */
+
+/* left side styles */
+
+.logo-text,
+.logo-btn {
+    width: 50%;
+}
+
+.logo-btn a {
+    width: 90%;
+}
+
+.logo-text {
+    text-align: center;
+    padding-top: 10%;
+    letter-spacing: 0.2em;
+}
+
+.logo-text span {
+    cursor: pointer;
+}
+
+/* header center styles */
+
+.center {
+    flex-direction: column;
+}
+
+.btn-about,
+.main-text {
+    flex-grow: 2;
+}
+
+.btn-about,
+.main-text {
+    display: flex;
+    justify-content: center;
+}
+
+.main-text div {
+    align-self: flex-end;
+}
+
+.main-text h1 {
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 36px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+}
+
+.main-text h1 span {
+    font-size: 100px;
+}
+
+.main-text p {
+    text-align: center;
+    margin: 0;
+}
+
+.btn-about {
+    position: relative;
+}
+
+.btn-about a {
+    display: block;
+    box-sizing: border-box;
+    width: 25%;
+    height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    padding-top: 10px;
+   align-self: center;
+   margin-bottom: 2%;
+}
