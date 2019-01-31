@@ -4,7 +4,6 @@
     --link: #fff;
     --link--hover: #b8b8b8;
     --bg-footer-color: #162b4d;
-    ;
 }
 
 html,
@@ -63,9 +62,30 @@ nav {
 main {
     grid-column-start: 2;
     grid-column-end: 4;
-    margin-top: 20px;
+    margin-top: 3%;
 }
 
+aside {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    margin-top: 8%;
+    margin-left: 7%;
+}
+
+footer {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    height: 100px;
+    background-color: var(--bg-footer-color);
+    display: grid;
+    grid-template-columns: 87% 13%;
+    color: #fff;
+    font-weight: 100;
+    opacity: .5;
+
+}
 /* header */
 
 .logo-text h1 {
@@ -95,6 +115,7 @@ main {
 .nav-item {
     box-sizing: border-box;
     height: 90px;
+    font-size: 1.2vw;
     text-align: center;
     color: #fff;
     padding-top: 32px;
@@ -124,6 +145,11 @@ main {
     text-align: right;
 }
 
+.post-description h2:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
 .post-photo {
     width: 50%;
 }
@@ -133,6 +159,10 @@ main {
     height: 100%;
 }
 
+.post-photo:hover {
+    opacity: .5;
+}
+
 .post-description {
     width: 40%;
 }
@@ -140,36 +170,85 @@ main {
 .post-description h2 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 100;
-    font-size: 48px;
+    font-size: 3vw;
+    word-wrap: break-word;
     line-height: 46px;
     color: #fff;
     margin: 28px 35px 0 35px;
 }
 
 .post-description p {
-  color: #fff;
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 24px 30px 0 35px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 24px 30px 0 35px;
+    opacity: .5;
 }
 
 .post-date {
     width: 10%;
     color: #fff;
-
+    opacity: .3;
 }
 
 .post-date h3 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 100;
-  box-sizing: border-box;
-  font-size: 48px;
-  margin: 1px 20px 0 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    box-sizing: border-box;
+    font-size: 3vw;
+    margin: 1px 20% 0 30%;
 }
 
 .post-date p {
-  font-size: 26px;
-  margin: 0 20px 0 20px;
+    font-size: 1.5vw;
+    margin: 0 20% 0 30%;
+}
+
+.post-5 .post-description {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* aside */
+
+.news-post {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.aside-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.aside-description h4 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    margin: 25px 20px 0 33px;
+    line-height: 1.1;
+}
+
+.aside-description p {
+    margin: 14px 32px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 100;
+    padding-bottom: 35px;
+}
+
+/* footer */
+.copyright p {
+    margin: 25px 25px;
+
+}
+
+.copyright p:nth-child(2) {
+    margin-top: -20px;
+}
+
+.dev {
+    margin-top: 10px;
 }
 
 /* tablet */
