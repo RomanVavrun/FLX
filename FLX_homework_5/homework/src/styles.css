@@ -255,6 +255,7 @@ footer {
 
 .dev {
     margin-top: 10px;
+    margin: 0 10px;
 }
 
 /* tablet */
@@ -392,7 +393,9 @@ footer {
     .post-description h2 {
         font-size: 10vw;
     }
-
+    .post-date {
+        margin-left: 0%;
+    }
     .post-date h3 {
         font-size: 12vw; 
         margin-top: 5%;
