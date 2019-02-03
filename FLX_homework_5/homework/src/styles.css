@@ -1,11 +1,3 @@
-:root {
-    --bg-color--dark: #0b192f;
-    --bg-color--header: #162b4d;
-    --link: #fff;
-    --link--hover: #b8b8b8;
-    --bg-footer-color: #162b4d;
-}
-
 html,
 body {
     padding: 0;
@@ -35,12 +27,12 @@ body {
 /* desktop  */
 
 .global-wrapper {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto;
     display: grid;
     height: 100%;
     width: 100%;
     grid-template-columns: 13.8% 27% 27% 18.5% 13.7%;
-    background-color: var(--bg-color--dark);
+    background-color: #0b192f;
 }
 
 /* positions */
@@ -48,7 +40,7 @@ body {
 header {
     grid-column-start: 2;
     grid-column-end: 5;
-    background-color: var(--bg-color--header);
+    background-color: #162b4d;
     height: 90px;
     display: grid;
     grid-template-columns: 20% 40% 40%;
@@ -78,7 +70,7 @@ footer {
     margin-top: 2%;
     margin-bottom: 1%;
     height: 100px;
-    background-color: var(--bg-footer-color);
+    background-color: #162b4d;
     display: grid;
     grid-template-columns: 87% 13%;
     color: #fff;
@@ -89,7 +81,7 @@ footer {
 /* header */
 
 .logo-text h1 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto;
     font-weight: 100;
     font-size: 36px;
     color: #fff;
@@ -133,11 +125,11 @@ footer {
 
 .nav-item a {
     text-decoration: none;
-    color: var(--link);
+    color: #fff;
 }
 
 .nav-item a:hover {
-    color: var(--link--hover);
+    color: #b8b8b8;
 }
 
 /* posts */
@@ -174,7 +166,7 @@ footer {
 }
 
 .post-description h2 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto;
     font-weight: 100;
     font-size: 3vw;
     word-wrap: break-word;
@@ -198,7 +190,7 @@ footer {
 }
 
 .post-date h3 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto;
     font-weight: 100;
     box-sizing: border-box;
     font-size: 3vw;
@@ -228,7 +220,7 @@ footer {
 }
 
 .aside-description h4 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto;
     font-weight: 300;
     font-size: 26px;
     margin: 25px 20px 0 33px;
@@ -284,8 +276,7 @@ footer {
         width: 20px;
         height: 2px;
         background-color: #fff;
-        margin: 6px auto;
-
+        margin: 6px 50%;
     }
     .logo-text {
         grid-row-start: 2;
@@ -293,7 +284,6 @@ footer {
         grid-column-start: 1;
         grid-column-end: 4;
         text-align: center;
-        /* margin-left: 30%; */
     }
     nav {
         grid-row-start: 1;
@@ -325,7 +315,7 @@ footer {
     }
     .post-date {
         width: 100%;
-        margin-left: 7%;
+        margin-left: 15%;
         box-sizing: border-box;
     }
     .post-date h3 {
@@ -351,7 +341,6 @@ footer {
     .news-post {
         margin-bottom: 1%;
     }
-
     footer {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -361,35 +350,29 @@ footer {
         box-sizing: border-box;
         padding-top: 1.5%;
     }
-
     .dev,
     .dev p,
     .copyright p,
     .copyright p:nth-child(2) {
         margin: 1px;
     }
-
 }
 
 /* mobile */
 
 @media (max-width: 480px) {
-
     .global-wrapper {
         grid-template-columns: 100%;
     }
-
     header {
         grid-column-start: 1;
         grid-column-end: 2;
     }
-
     main {
         grid-column-start: 1;
         grid-column-end: 2;
         margin: 3% 2% 0% 2%;
     }
-    
     .post-description h2 {
         font-size: 10vw;
     }
@@ -397,14 +380,14 @@ footer {
         margin-left: 0%;
     }
     .post-date h3 {
-        font-size: 12vw; 
+        font-size: 12vw;
         margin-top: 5%;
+        text-align: center;
     }
-
     .post-date p {
         font-size: 5.5vw;
+        text-align: center;
     }
-
     aside {
         grid-column-start: 1;
         grid-column-end: 2;
@@ -413,13 +396,11 @@ footer {
     .news-post {
         margin-bottom: 5%;
     }
-
     footer {
         grid-column-start: 1;
         grid-column-end: 2;
         margin: 2% 2%;
         height: 150px;
         padding: 30px 5% 0 5%;
-
     }
 }
