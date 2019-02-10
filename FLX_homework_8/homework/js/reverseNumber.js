@@ -1,4 +1,4 @@
-function reverseNumbers(number) { // 123 or -123
+function reverseNumbers(number) {
 
     number += ''; // alternative .toString() method
     
