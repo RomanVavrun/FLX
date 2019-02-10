@@ -28,11 +28,10 @@ if (!Play) {
 
         for (let attempts = 3; attempts > 0; attempts--) {
 
-            let userNumber = +prompt(`
-            Enter number from 0 to ${range} \n 
-            Attempts left: ${attempts} \n
-            Total prize: ${money} \n 
-            Possible prize on current attempt: ${attem1win}`, '');
+            let userNumber = +prompt('Enter number from 0 to ' + range + '\n' +
+            'Attempts left: ' + attempts + '\n' +
+            'Total prize: ' + money + '\n' + 
+            'Possible prize on current attempt: ' + attem1win, '');
 
             if (userNumber === randomNumber && attempts === 3) {
                 money += attem1win;
