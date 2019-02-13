@@ -69,46 +69,82 @@ function getAmountOfAdultPeople(data) {
 
 // getAmountOfAdultPeople(data);
 
-//task 6
+// //task 6
+// Write function, which returns array of names of people, 
+// who are over 18, their favorite fruit is banana 
+// and their eye color is green.Reuse functions from task 3 and 4.
 
+// // getGreenAdultBananaLovers(data) returns [‘George]
+// function getGreenAdultBananaLovers(data) {
+//     let userage = [];
+    
+//     for (let i = 0; i < data.length; i++) {
+//         userage[i] = data[i].age;
+//     }
 
+//     userage = filterArray(userage, function (el) {
+//         return el > 18
+//     })
 
-
+// }
 
 
 // data for task 5 and 6
 let data = [
     {
-      "_id": "5b5e3168c6bf40f2c1235cd6",
-      "index": 0,
-      "age": 39,
-      "eyeColor": "green",
-      "name": "Stein",
-      "favoriteFruit": "apple"
+        "_id": "5b5e3168c6bf40f2c1235cd6",
+        "index": 0,
+        "age": 39,
+        "eyeColor": "green",
+        "name": "Stein",
+        "favoriteFruit": "apple"
     },
     {
-      "_id": "5b5e3168e328c0d72e4f27d8",
-      "index": 1,
-      "age": 38,
-      "eyeColor": "blue",
-      "name": "Cortez",
-      "favoriteFruit": "strawberry"
+        "_id": "5b5e3168e328c0d72e4f27d8",
+        "index": 1,
+        "age": 38,
+        "eyeColor": "blue",
+        "name": "Cortez",
+        "favoriteFruit": "strawberry"
     },
     {
-      "_id": "5b5e3168cc79132b631c666a",
-      "index": 2,
-      "age": 2,
-      "eyeColor": "blue",
-      "name": "Suzette",
-      "favoriteFruit": "apple"
+        "_id": "5b5e3168cc79132b631c666a",
+        "index": 2,
+        "age": 2,
+        "eyeColor": "blue",
+        "name": "Suzette",
+        "favoriteFruit": "apple"
     },
     {
-      "_id": "5b5e31682093adcc6cd0dde5",
-      "index": 3,
-      "age": 19,
-      "eyeColor": "green",
-      "name": "George",
-      "favoriteFruit": "banana"
+        "_id": "5b5e31682093adcc6cd0dde5",
+        "index": 3,
+        "age": 19,
+        "eyeColor": "green",
+        "name": "George",
+        "favoriteFruit": "banana"
     }
-  ]
-  
+]
+
+
+//task 7
+function keys(object) {
+   let keys = [];
+   let integer = 0;
+
+   for (const key in object) {
+       keys[integer] = key;
+       integer++;
+   }
+   return keys;
+}
+
+//task 8 
+function values(object) {
+    let values = [];
+    let integer = 0;
+    for (const key in object) {
+        values[integer] = object[key];
+        integer++;
+    }
+    return values;
+}
