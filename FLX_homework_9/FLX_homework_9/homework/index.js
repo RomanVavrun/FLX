@@ -77,7 +77,7 @@ function getAmountOfAdultPeople(data) {
 // // getGreenAdultBananaLovers(data) returns [‘George]
 // function getGreenAdultBananaLovers(data) {
 //     let userage = [];
-    
+
 //     for (let i = 0; i < data.length; i++) {
 //         userage[i] = data[i].age;
 //     }
@@ -128,14 +128,14 @@ let data = [
 
 //task 7
 function keys(object) {
-   let keys = [];
-   let integer = 0;
+    let keys = [];
+    let integer = 0;
 
-   for (const key in object) {
-       keys[integer] = key;
-       integer++;
-   }
-   return keys;
+    for (const key in object) {
+        keys[integer] = key;
+        integer++;
+    }
+    return keys;
 }
 
 //task 8 
@@ -147,4 +147,26 @@ function values(object) {
         integer++;
     }
     return values;
+}
+
+//task 9
+function showFormattedDate(date) {
+
+    let month = new Array();
+    
+    month[0] = "Jan";
+    month[1] = "Feb";
+    month[2] = "Mar";
+    month[3] = "Apr";
+    month[4] = "May";
+    month[5] = "Jun";
+    month[6] = "Jul";
+    month[7] = "Aug";
+    month[8] = "Sep";
+    month[9] = "Oct";
+    month[10] = "Nov";
+    month[11] = "Dec";
+    let n = month[date.getMonth()];
+
+    console.log('Date: ' + date.getDate() + ' of ' + n + ', ' + date.getFullYear())
 }
