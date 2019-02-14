@@ -7,8 +7,8 @@ function findTypes(...rest) {
     return typevalue;
 }
 
-// findTypes('number');
-// findTypes(null, 5, 'hello');
+findTypes('number');
+findTypes(null, 5, 'hello');
 
 // task 2
 function executeforEach(array, fun) {
@@ -18,26 +18,28 @@ function executeforEach(array, fun) {
     return array;
 }
 
-// executeforEach([1, 2, 3], function (el) {
-//     console.log(el)
-// })
+executeforEach([1, 2, 3], function (el) {
+    console.log(el)
+})
 
 //task 3
 function mapArray(arr, fun) {
     return executeforEach(arr, fun);
 }
 
-// mapArray([2, 5, 8], function (el) {
-//     return el + 3
-// })
+mapArray([2, 5, 8], function (el) {
+    return el + 3
+})
 
 //task 4
 function filterArray(arr, fun) {
     let newArray = [];
     let returnarr = [];
+
     for (let i = 0; i < arr.length; i++) {
         newArray[i] = arr[i];
     }
+
     executeforEach(arr, fun);
 
     for (let i = 0; i < arr.length; i++) {
@@ -48,9 +50,9 @@ function filterArray(arr, fun) {
     return returnarr;
 }
 
-// filterArray([2, 5, 8], function (el) {
-//     return el > 3
-// })
+filterArray([2, 5, 8], function (el) {
+    return el > 3
+})
 
 //task 5
 function getAmountOfAdultPeople(data) {
@@ -67,27 +69,75 @@ function getAmountOfAdultPeople(data) {
     return copydata.length;
 }
 
-// getAmountOfAdultPeople(data);
+getAmountOfAdultPeople(data);
 
-// //task 6
-// Write function, which returns array of names of people, 
-// who are over 18, their favorite fruit is banana 
-// and their eye color is green.Reuse functions from task 3 and 4.
+//task 6
+function getGreenAdultBananaLovers(data) {
+    let name = [];
+    filterArray(data, function (el) {
+        if (el.age > 18 && el.favoriteFruit === 'banana' && el.eyeColor === 'green') {
+            name.push(el.name);
+        }
+    });
+    return name;
+}
 
-// // getGreenAdultBananaLovers(data) returns [‘George]
-// function getGreenAdultBananaLovers(data) {
-//     let userage = [];
+getGreenAdultBananaLovers(data)
 
-//     for (let i = 0; i < data.length; i++) {
-//         userage[i] = data[i].age;
-//     }
+//task 7
+function keys(object) {
+    let keys = [];
+    let integer = 0;
 
-//     userage = filterArray(userage, function (el) {
-//         return el > 18
-//     })
+    for (const key in object) {
+        keys[integer] = key;
+        integer++;
+    }
+    return keys;
+}
 
-// }
+keys({ keyOne: 1, keyTwo: 2, keyThree: 3 })
 
+//task 8 
+function values(object) {
+    let values = [];
+    let integer = 0;
+    for (const key in object) {
+        values[integer] = object[key];
+        integer++;
+    }
+    return values;
+}
+
+values({ keyOne: 1, keyTwo: 2, keyThree: 3 })
+
+//task 9
+function showFormattedDate(date) {
+    let month = ['Jan', 'Feb', 'Mar',
+        'Apr', 'May', 'Jun',
+        'Jul', 'Aug', 'Sep',
+        'Oct', 'Nov', 'Dec'];
+
+    console.log('Date: ' + date.getDate() + ' of ' + month[date.getMonth()] + ', ' + date.getFullYear())
+}
+
+showFormattedDate(new Date('2019-01-27T01:10:00'))
+
+//task 10
+function isEvenYear(date) {
+    let year = date.getFullYear();
+    return year % 2 === 0;
+}
+
+isEvenYear(new Date('2019-01-27T01:10:00'))
+
+//task 11
+function isEvenMonth(date) {
+    let month = date.getMonth() + 1;
+    return month % 2 === 0;
+}
+
+isEvenMonth(new Date('2019-02-27T01:10:00'))
 
 // data for task 5 and 6
 let data = [
@@ -124,60 +174,3 @@ let data = [
         "favoriteFruit": "banana"
     }
 ]
-
-
-//task 7
-function keys(object) {
-    let keys = [];
-    let integer = 0;
-
-    for (const key in object) {
-        keys[integer] = key;
-        integer++;
-    }
-    return keys;
-}
-
-//task 8 
-function values(object) {
-    let values = [];
-    let integer = 0;
-    for (const key in object) {
-        values[integer] = object[key];
-        integer++;
-    }
-    return values;
-}
-
-//task 9
-function showFormattedDate(date) {
-
-    let month = new Array();
-
-    month[0] = "Jan";
-    month[1] = "Feb";
-    month[2] = "Mar";
-    month[3] = "Apr";
-    month[4] = "May";
-    month[5] = "Jun";
-    month[6] = "Jul";
-    month[7] = "Aug";
-    month[8] = "Sep";
-    month[9] = "Oct";
-    month[10] = "Nov";
-    month[11] = "Dec";
-    let n = month[date.getMonth()];
-
-    console.log('Date: ' + date.getDate() + ' of ' + n + ', ' + date.getFullYear())
-}
-
-//task 10
-function isEvenYear(date) {
-    let year = date.getFullYear();
-    return year % 2 === 0;   
-}
-//task 11
-function isEvenMonth(date) {
-    let month = date.getMonth() + 1;
-    return month % 2 === 0;
-}
