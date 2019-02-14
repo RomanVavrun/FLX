@@ -153,7 +153,7 @@ function values(object) {
 function showFormattedDate(date) {
 
     let month = new Array();
-    
+
     month[0] = "Jan";
     month[1] = "Feb";
     month[2] = "Mar";
@@ -169,4 +169,15 @@ function showFormattedDate(date) {
     let n = month[date.getMonth()];
 
     console.log('Date: ' + date.getDate() + ' of ' + n + ', ' + date.getFullYear())
+}
+
+//task 10
+function isEvenYear(date) {
+    let year = date.getFullYear();
+    return year % 2 === 0;   
+}
+//task 11
+function isEvenMonth(date) {
+    let month = date.getMonth() + 1;
+    return month % 2 === 0;
 }
