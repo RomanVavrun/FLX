@@ -29,9 +29,9 @@ function userCard(index) {
                 operationTime: new Date().toLocaleString('en-GB')
             });
         } else if (value > balance) {
-            console.log('You don\'t have enough money');
+            console.error('You don\'t have enough money');
         } else {
-            console.log('Your transaction limit is: ' + transactionLimit);
+            console.error('Your transaction limit is: ' + transactionLimit);
         }
     }
 
@@ -53,9 +53,9 @@ function userCard(index) {
             card.putCredits(transfer);
 
         } else if (value > balance) {
-            console.log('You don\'t have enough money');
+            console.error('You don\'t have enough money');
         } else {
-            console.log('Your transaction limit is: ' + transactionLimit);
+            console.error('Your transaction limit is: ' + transactionLimit);
         }
     }
 
@@ -76,7 +76,7 @@ function UserAccount(userName) {
         card.push(getCardByKey);
         let maxCard = 3;
         if (card.length > maxCard) {
-            console.log('Maximum number of cards for the user is: ' + maxCard);
+            console.error('Maximum number of cards for the user is: ' + maxCard);
         }
     }
 
