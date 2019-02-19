@@ -1,15 +1,14 @@
-function userCard (index) {
+function userCard(index) {
     let balance = 100;
     let transactionLimit = 100;
     let historyLogs = [];
     let key = index;
-    let operationTime = new Date().toLocaleString('en-GB');
-    
+
     function getCardOptions() {
-        return console.log('Balance: ' + balance + '\n',
-        + 'transactionLimit: ' + transactionLimit + '\n',
-        + 'historyLogs: ' + historyLogs + '\n',
-        + 'key: ' + key + '\n')
+        return console.log('Balance: ' + balance,
+            + 'transactionLimit: ' + transactionLimit,
+            + 'historyLogs: ' + historyLogs,
+            + 'key: ' + key)
     }
 
     function putCredits(value) {
@@ -30,9 +29,9 @@ function userCard (index) {
                 operationTime: new Date().toLocaleString('en-GB')
             });
         } else if (value > balance) {
-            console.log('You don\'t have enough money, current balance is: ' + balance);
+            console.log('You don\'t have enough money');
         } else {
-            console.log('You surpassed transaction limit, current limit is: ' + transactionLimit);
+            console.log('Your transaction limit is: ' + transactionLimit);
         }
     }
 
@@ -54,9 +53,9 @@ function userCard (index) {
             card.putCredits(transfer);
 
         } else if (value > balance) {
-            console.log('You don\'t have enough money, current balance is ' + balance);
+            console.log('You don\'t have enough money');
         } else {
-            console.log('You surpassed transaction limit, current limit is: ' + transactionLimit);
+            console.log('Your transaction limit is: ' + transactionLimit);
         }
     }
 
@@ -69,17 +68,15 @@ function userCard (index) {
     }
 }
 
-function UserAccount(name) {
-    const userData = {
-        name: name,
-        card: []
-    };
+function UserAccount(userName) {
+    let name = userName;
+    let card = [];
 
     function addCard() {
-        userData.card.push(getCardByKey);
-        const maxOwnCard = 3;
-        if (userData.card.length > maxOwnCard) {
-            console.log('You exceeded max number of cards , you can have max ' + maxOwnCard + 'cards.');
+        card.push(getCardByKey);
+        let maxCard = 3;
+        if (card.length > maxCard) {
+            console.log('Maximum number of cards for the user is: ' + maxCard);
         }
     }
 
@@ -89,5 +86,5 @@ function UserAccount(name) {
     return {
         addCard: addCard,
         getCardByKey: getCardByKey
-    };
+    }
 }
