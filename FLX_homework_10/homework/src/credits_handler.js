@@ -45,4 +45,27 @@ function userCard (index) {
         });
     }
 
+    function transferCredits(value, card) {
+        let tax = 0.5;
+        let percentage = 100;
+        if (value <= balance && value <= transactionLimit) {
+            let moneyTransfer = value - value * tax / percentage;
+            this.takeCredits(value);
+            card.putCredits(moneyTransfer);
+
+        } else if (value > balance) {
+            console.log('You don\'t have enough money, current balance is ' + balance);
+        } else {
+            console.log('You surpassed transaction limit, current limit is: ' + transactionLimit);
+        }
+    }
+
+    return {
+        getCardOptions: getCardOptions,
+        putCredits: putCredits,
+        takeCredits: takeCredits,
+        setTransactionLimit: setTransactionLimit,
+        transferCredits: transferCredits
+    };
+
 }
