@@ -12,11 +12,11 @@ function userCard (index) {
         + 'key: ' + key + '\n')
     }
 
-    function putCredits(sum) {
-        balance += sum;
+    function putCredits(value) {
+        balance += value;
         historyLogs.push({
             operationType: 'Received credits',
-            credits: sum,
+            credits: value,
             operationTime: new Date().toLocaleString('en-GB')
         });
     }
@@ -34,6 +34,15 @@ function userCard (index) {
         } else {
             console.log('You surpassed transaction limit, current limit is: ' + transactionLimit);
         }
+    }
+
+    function setTransactionLimit(value) {
+        transactionLimit = value;
+        historyLogs.push({
+            operationType: 'Transaction limit change',
+            credits: value,
+            operationTime: new Date().toLocaleString('en-GB', { timeZone: 'UTC' })
+        });
     }
 
 }
