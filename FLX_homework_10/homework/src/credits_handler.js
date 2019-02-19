@@ -5,9 +5,9 @@ function userCard(index) {
     let key = index;
 
     function getCardOptions() {
-        return console.log('Balance: ' + balance,
-            + 'transactionLimit: ' + transactionLimit,
-            + 'historyLogs: ' + historyLogs,
+        return console.log('Balance: ' + balance
+            + 'transactionLimit: ' + transactionLimit
+            + 'historyLogs: ' + historyLogs
             + 'key: ' + key)
     }
 
