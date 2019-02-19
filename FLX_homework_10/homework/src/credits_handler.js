@@ -5,10 +5,10 @@ function userCard(index) {
     let key = index;
 
     function getCardOptions() {
-        return console.log('Balance: ' + balance
-            + 'transactionLimit: ' + transactionLimit
-            + 'historyLogs: ' + historyLogs
-            + 'key: ' + key)
+        return console.log(' Balance:' + balance
+            + ' transactionLimit:' + transactionLimit
+            + ' historyLogs:' + historyLogs
+            + ' key:' + key)
     }
 
     function putCredits(value) {
