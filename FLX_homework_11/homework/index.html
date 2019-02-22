@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 11 - TODO Cat List</title>
+  <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+  <div id="root">
+    <section class="todo-cat">
+      <header>
+        <h1 class="todo-cat-header">TODO Cat List</h1>
+        <p class="max-item-error">Maximum item per list are created</p>
+        <div class="add-item">
+          <input type="text" name="todo-add-item" id="input-todo-task" placeholder=" Add New Action" autofocus>
+          <button class="add-button" disabled><i class="material-icons">
+              add_box
+            </i></button>
+        </div>
+        <hr class="hr-line">
+      </header>
+      <main>
+        <ul class="todo-task-list">
+          <li class="task-list-item"><i class="material-icons">check_box_outline_blank</i> <span class="task-text">some text</span> <i class="material-icons">delete</i></li>
+          <li class="task-list-item"><i class="material-icons">check_box_outline_blank</i> <span class="task-text">some text</span> <i class="material-icons">delete</i></li>
+          <li class="task-list-item"><i class="material-icons">check_box_outline_blank</i> <span class="task-text">some text</span> <i class="material-icons">delete</i></li>
+          <li class="task-list-item"><i class="material-icons">check_box_outline_blank</i> <span class="task-text">some text</span> <i class="material-icons">delete</i></li>
+          <li class="task-list-item"><i class="material-icons">check_box_outline_blank</i> <span class="task-text">some text</span> <i class="material-icons">delete</i></li>
+          <li class="task-list-item"><i class="material-icons">check_box_outline_blank</i> <span class="task-text">some text</span> <i class="material-icons">delete</i></li>
+          <li class="task-list-item"><i class="material-icons">check_box_outline_blank</i> <span class="task-text">some text</span> <i class="material-icons">delete</i></li>
+          <li class="task-list-item"><i class="material-icons">check_box_outline_blank</i> <span class="task-text">some text</span> <i class="material-icons">delete</i></li>
+          <li class="task-list-item"><i class="material-icons">check_box_outline_blank</i> <span class="task-text">some text</span> <i class="material-icons">delete</i></li>
+          <li class="task-list-item"><i class="material-icons">check_box_outline_blank</i> <span class="task-text">some text</span> <i class="material-icons">delete</i></li>
+
+        </ul>
+      </main>
+      <footer class="todo-cat-footer">
+        <img class="todo-cat-img" src="../assets/img/cat.png" alt="cat-foot">
+      </footer>
+    </section>
+  </div>
+
+  <script src="./src/app.js"></script>
+</body>
+
+</html>
