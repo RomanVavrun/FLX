@@ -16,6 +16,7 @@ body {
 }
 
 /* header */
+
 .todo-cat-header {
     text-align: center;
     font-weight: 100;
@@ -25,7 +26,6 @@ body {
 .max-item-error {
     text-align: center;
     margin-top: -20px;
-    display: none;
 }
 
 .add-item {
@@ -41,11 +41,13 @@ body {
     border: 1px solid #000;
 }
 
-.add-button {
+.button {
     display: block;
-    height: 18px;
-    width: 18px;
+    height: 10px;
+    width: 10px;
     cursor: pointer;
+    background: #fff;
+    border: none;
 }
 
 .material-icons {
@@ -53,19 +55,15 @@ body {
     cursor: pointer;
 }
 
-
 .hr-line {
     border: 1px solid #000;
 }
 
-[disabled] {
-    cursor: not-allowed;
-}
-
 /* main */
+
 .todo-task-list {
     list-style: none;
-    padding-left: 23px;
+    padding-left: 20px;
     margin: 0;
     box-sizing: border-box;
 }
@@ -78,10 +76,11 @@ body {
 
 .task-text {
     flex-grow: 1;
-    margin: -3.5px 5px;
+    margin: -3.5px 10px;
 }
 
 /* footer */
+
 .todo-cat-footer {
     position: absolute;
     bottom: 10px;
@@ -91,7 +90,6 @@ body {
 
 .todo-cat-img {
     display: block;
-
     width: 60px;
     height: 60px;
     margin: 0 auto;
