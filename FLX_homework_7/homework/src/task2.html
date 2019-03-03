@@ -7,6 +7,34 @@
   <title>Task 2</title>
 </head>
 <body>
-  <script src="js/task2.js"></script>
+  <pre>
+
+
+
+
+
+
+
+
+
+
+      Your task is to write a game. 
+
+      Requirements:
+      Step 1:
+      	Create a prompt window (use confirm()). Show the message inside the window ‘Do you want to play a game?’.
+      	In case the user clicks the 'Cancel' button, the message 'You did not become a millionaire, but can.' should be shown (use alert).
+      Step 2:
+      	If user clicked ‘Ok’ – start a game: randomly (use Math.random()) choose a number in range [0; 5] and ask user to enter a number. (use prompt()).
+      	User has 3 attempts to guess a number.
+      	If user guessed number on 1-st attempt prize is 10$ (maximum prize for current numbers range), 2-nd attempt – 5$, 3-rd attempt – 2$. 
+      	If user did not guess a number show the message ‘Thank you for a game. Your prize is: …’ (Use alert) and ask if he wants to play again (use confirm).
+      Step 3:
+      	If user did guess - Show the message ‘Congratulation!   Your prize is: … Do you want to continue?’.
+      	If user does not want to continue – show the message ‘Thank you for a game. Your prize is: …’ (Use alert) and ask if he wants to play again (use confirm).
+      	If user does want to continue, make number range twice as big as the previous one (for example [0; 5] -> [0; 10]), and three times bigger maximum prize (for example on 1-st attempt prize will be 30$, 2-nd attempt – 15$, 3-rd attempt – 7$). Prize must be added to the previous one and number of attempts should be set to 3 (user should have 3 attempts to guess a number for each numbers range)
+      	Each time you ask user to enter a number you should show him a range of numbers, how much attempts he has left, his total prize and possible prize on current attempt.      
+  </pre>
+  <script src="js/task2.js" defer></script>
 </body>
 </html>
