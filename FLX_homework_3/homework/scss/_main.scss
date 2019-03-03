@@ -149,6 +149,7 @@ header {
         width: 200px;
         margin-top: 20px;
         margin-bottom: 15px;
+        margin-right: 10px;
         padding-left: 15px;
         background-color: $SearchBGColor;
         border: 1px solid $SearchBorderColor;
@@ -183,11 +184,11 @@ header {
 label {
     position: absolute;
     color: $LabelColor;
-    left: 89%;
+    left: 87%;
     top: 27px;
     border-color: $LabelBorderColor;
     &:first-child {
-        left: 41.5%;
+        left: 40%;
         top: 27px;
     }
 }
@@ -205,9 +206,13 @@ input {
     margin-top: 45px;
     width: 100%;
     label {
-        left: 81.5%;
+        left: 77%;
         top: -25px;
     }
+}
+
+#UserQuestion {
+    background-color: $contentBackground;
 }
 
 form button {
