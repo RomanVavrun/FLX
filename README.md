@@ -1,6 +1,6 @@
 # flX
 My repository for EPAM University Program <br />
-Course: Front-end lab <br>
+Course: Front-end lab <br />
 Author: Roman Vavrunkevuch
 
  1. [HTML Basics](https://romanvavrun.github.io/FLX/FLX_homework_1/homework/)
@@ -10,6 +10,6 @@ Author: Roman Vavrunkevuch
  5. [Responsive](https://romanvavrun.github.io/FLX/FLX_homework_5/homework/src/)
  6. [Intro to JS - task 1](https://romanvavrun.github.io/FLX/FLX_homework_6/homework/task1.html),  [Intro to JS - task 2](https://romanvavrun.github.io/FLX/FLX_homework_6/homework/task2.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODM4MDE2MDgsMjE0NDkzOTI3NSwtMz
-M0NzYzNzYxXX0=
+eyJoaXN0b3J5IjpbMTA4OTkxNTQ2MywyMTQ0OTM5Mjc1LC0zMz
+Q3NjM3NjFdfQ==
 -->
